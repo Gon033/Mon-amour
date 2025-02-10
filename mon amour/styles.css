@@ -1,0 +1,48 @@
+body {
+    font-family: cursive;
+    background-color: #FFD5F8;
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.neon-tittle {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff2fab, 0 0 30px #ff2fab, 0 0 50px #ff2fab, 0 0 70px #ff2fab;
+    }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff2fab;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff00a5;
+}

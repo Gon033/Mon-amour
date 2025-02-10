@@ -1,0 +1,200 @@
+body {
+    font-family: cursive;
+    background-color: #FFD5F8;
+    text-align: center;
+    height: 100vh;
+    margin: 50px;
+}
+
+.flower-tittle {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff2fab, 0 0 30px #ff2fab, 0 0 50px #ff2fab, 0 0 70px #ff2fab;
+    }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff2fab;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff00a5;
+}
+
+/* .flower-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.flower {
+    display: flex;
+    justify-content: center;
+    align-items: relative;
+    opacity: 0;
+    animation: growFlower 2s forwards;
+}
+
+.stem {
+    width: 8px;
+    height: 100px;
+    background-color: #228B22;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    animation: growStem 1.5s forwards;
+}
+
+.petals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -130px;
+    opacity: 0;
+    transform: scale(0);
+    animation: growPetals 2s  1s forwards;
+}
+
+.petal {
+    width: 40px;
+    height: 40px;
+    background-color: #ff000e;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    animation: petalAnimation 2s forwards;
+}
+
+.petal-center {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    animation: petalAnimation 2s forwards;
+}
+
+.petal:nth-child(1) {
+    top: -15px;
+    left: -30px;
+    animation-delay: 0s;
+    animation: petalAnimation 1s 1s forwards;
+}
+
+.petal:nth-child(2) {
+    top: -10px;
+    left: -5px;
+    animation-delay: 0.2s;
+    animation: petalAnimation 1s 1.3s forwards;
+}
+
+.petal:nth-child(3) {
+    top: 10px;
+    left: 0px;
+    animation-delay: 0.4s;
+    animation: petalAnimation 1s 1.6s forwards;
+}
+
+.petal:nth-child(4) {
+    top: 15px;
+    left: -40px;
+    animation-delay: 0.6s;
+    animation: petalAnimation 1s 1.9s forwards;
+}
+
+.petal:nth-child(5) {
+    top: 30px;
+    left: -20px;
+    animation-delay: 0.8s;
+    animation: petalAnimation 1s 1.9s forwards;
+}
+
+.petal:nth-child(6) {
+    top: 5px;
+    left: -30px;
+    animation-delay: 0.10s;
+    animation: petalAnimation 1s 1.9s forwards;
+}
+
+.petal-center {
+    top: 10px;
+    left: -13px;
+    animation-delay: 0.10s;
+    animation: petalAnimation 1s forwards;
+} */
+
+@keyframes growFlower {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growStem {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes growPetals {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes petalAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

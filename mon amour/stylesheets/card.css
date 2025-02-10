@@ -1,0 +1,88 @@
+body {
+    font-family: cursive;
+    background-color: #FFD5F8;
+    margin: 50px;
+}
+
+.tittle{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff2fab, 0 0 10px #ff2fab, 0 0 20px #ff2fab, 0 0 40px #ff2fab;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff2fab, 0 0 30px #ff2fab, 0 0 50px #ff2fab, 0 0 70px #ff2fab;
+    }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.card {
+    width: 300px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card-content {
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: white;
+    color: black;
+    width: auto;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 0.9em;
+    background-color: #ff2fab;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff00a5;
+}
