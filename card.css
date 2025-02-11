@@ -1,5 +1,4 @@
 body {
-    font-family: cursive;
     background-color: #FFD5F8;
     margin: 50px;
 }
@@ -50,7 +49,7 @@ img {
     align-items: center;
 }
 
-.card:hover {
+.card:touch {
     background-color: white;
     color: black;
     width: auto;
