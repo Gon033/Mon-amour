@@ -49,7 +49,7 @@ img {
     align-items: center;
 }
 
-.card:touch {
+.card:hover {
     background-color: white;
     color: black;
     width: auto;
